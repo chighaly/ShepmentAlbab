@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.bootply.com/render/EOgJSIzPGS -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+        <title>Bootply snippet - Bootstrap </title>
+        <meta name="generator" content="Bootply">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Bootstrap  example snippet for Bootstrap.">
+        
+        <!-- Bootstrap Core CSS -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+        <!-- Timeline CSS -->
+        <!--<link href="dist/css/timeline.css" rel="stylesheet">-->
+
+        <!-- Custom CSS -->
+        <!--<link href="dist/css/sb-admin-2.css" rel="stylesheet">-->
+
+        <!-- Morris Charts CSS -->
+        <link href="bower_components/morrisjs/morris.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- CSS code from Bootply.com editor -->
+
+        <style type="text/css">
+            /* CSS used here will be applied after bootstrap.css */
+            /*
+             * Slidebar (add to your bootstrap)
+             */
+
+            body{
+                overflow-x: hidden;
+                background-color: #dddddd;
+
+            }
+
+            .slidebar-form {
+                padding: 7px 15px 13px 15px;
+            }
+            .slidebar-nav {
+                left: 250px;
+                list-style: none;
+                height: 100%;
+                margin: 0;
+                margin-left: -250px;  
+                overflow-y: auto;
+                padding: 0;
+                position: fixed; 
+                top: 51px;
+                width: 0;
+                z-index: 1000;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            } 
+            #wrapper.toggled .slidebar-nav {
+                width: 250px;
+            }
+/*            .slidebar-nav .navbar-collapse {
+                padding: 0;
+                max-height: none;
+            }
+            .slidebar-nav ul {
+                float: none;
+                width: 100%;
+            }
+            .slidebar-nav ul:not {
+                display: block;
+            }
+            .slidebar-nav li {
+                float: none;
+                display: block;
+            }
+            .slidebar-nav li a {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+            .slidebar-nav .open .dropdown-menu {
+                position: static;
+                float: none;
+                width: auto;
+                margin: 0;
+                padding: 5px 0;
+                background-color: transparent;
+                border: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .slidebar-nav .open .dropdown-menu > li > a {
+                padding: 5px 15px 5px 25px;
+            }
+            .slidebar-nav .navbar-brand {
+                width: 100%;
+            }
+            .slidebar-nav .open > a > b.caret {
+                border-top: none;
+                border-bottom: 4px solid;
+            }
+            .slidebar-nav .navbar-nav {
+                margin: 0;
+            }*/
+
+            #wrapper {
+                padding-left: 0;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+            #wrapper.toggled {
+                padding-left: 250px;
+            }
+            #page-wrapper6 {
+                width: 100%;
+                position: absolute;
+                padding: 15px;
+                top: 50px;
+            }
+            #wrapper.toggled #page-wrapper6 {
+                position: absolute;
+                margin-right: -250px;
+            }
+            @media(min-width:768px) {
+                #wrapper {
+                    padding-left: 250px;
+                }
+                #wrapper.toggled {
+                    padding-left: 0;
+                }
+                #page-wrapper6 {
+                    padding: 20px;
+                    position: relative;
+                }
+                #wrapper.toggled #page-wrapper6 {
+                    position: relative;
+                    margin-right: 0;
+                }
+                .slidebar-nav {
+                    width: 250px;;
+                }
+                #wrapper.toggled .slidebar-nav {
+                    width: 0;
+                }
+            }
+
+            .slidebar-toggle {
+                position: relative;
+                float: left;
+                padding: 9px 10px;
+                margin-top: 8px;
+                margin-left: 15px;
+                margin-bottom: 8px;
+                background-color: transparent;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+            }
+            .slidebar-toggle:focus {
+                outline: 0;
+            }
+            .slidebar-toggle .icon-bar {
+                display: block;
+                width: 22px;
+                height: 2px;
+                border-radius: 1px;
+            }
+            .slidebar-toggle .icon-bar + .icon-bar {
+                margin-top: 4px;
+            }
+            .navbar-default .slidebar-toggle {
+                border-color: #ddd;
+            }
+            .navbar-default .slidebar-toggle:hover,
+            .navbar-default .slidebar-toggle:focus {
+                background-color: #ddd;
+            }
+            .navbar-default .slidebar-toggle .icon-bar {
+                background-color: #888;
+            }
+        </style>
+        <script id="_carbonads_projs" type="text/javascript" src="./123456_files/C6AILKT.json"></script><link rel="stylesheet" type="text/css" href="chrome-extension://neomigpibafpboiknmijddgnncengfnm/css/divpop.css"></head>
+
+    <!-- HTML code from Bootply.com editor -->
+
+    <body>
+
+        <nav id="navbar-white" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button href="#menu-toggle" class="slidebar-toggle" id="menu-toggle" >
+                    <span class="sr-only">Toggle sidebar</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+<!--                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>-->
+                <span><a class="navbar-brand" href="http://www.bootply.com/">Slidebar</a></span>
+            </div>
+
+<!--            <div class="navbar-collapse collapse">
+
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="http://www.bootply.com/render/EOgJSIzPGS#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="glyphicon glyphicon-th-list"></i> Services <b class="caret"></b></a>
+                            <ul class="dropdown-menu"> 
+                                <li><a href="http://www.bootply.com/">Carwashes</a></li>
+                                <li><a href="http://www.bootply.com/">Lapdances</a></li>
+                                <li><a href="http://www.bootply.com/">Musicals</a></li>
+                                <li><a href="http://www.bootply.com/">Tutorials</a></li>           
+                                <li><a href="http://www.bootply.com/">Catering</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="http://www.bootply.com/render/EOgJSIzPGS#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="glyphicon glyphicon-tags"></i> Products <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.bootply.com/">Books</a></li>
+                                <li><a href="http://www.bootply.com/">Leaflets</a></li>
+                                <li><a href="http://www.bootply.com/">CDs</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Merchandise</li>
+                                <li><a href="http://www.bootply.com/">Towels</a></li>
+                                <li><a href="http://www.bootply.com/">Flags</a></li>
+                                <li><a href="http://www.bootply.com/">Coffee Mugs</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="http://www.bootply.com/render/EOgJSIzPGS#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> Profile <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.bootply.com/"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
+                                <li><a href="http://www.bootply.com/"><i class="glyphicon glyphicon-plus"></i> Account</a></li>
+                                <li><a href="http://www.bootply.com/"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
+                                <li><a href="http://www.bootply.com/"><i class="glyphicon glyphicon-comment"></i> Notifications</a></li>           
+                            </ul>
+                        </li>        
+                    </ul>
+                </div>
+            </div>-->
+        </nav>  
+        <div id="wrapper">    
+            <!-- Sidebar -->
+            <div id="slidebar-white" class="slidebar-nav">
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li class="sidebar-search">
+                                <div class="input-group custom-search-form">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                                <!-- /input-group -->
+                            </li>
+                            <li>
+                                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="flot.html">Flot Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="morris.html">Morris.js Charts</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            </li>
+                            <li>
+                                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="panels-wells.html">Panels and Wells</a>
+                                    </li>
+                                    <li>
+                                        <a href="buttons.html">Buttons</a>
+                                    </li>
+                                    <li>
+                                        <a href="notifications.html">Notifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="typography.html">Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="icons.html"> Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="grid.html">Grid</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="#">Second Level Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Second Level Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="#">Third Level Item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Third Level Item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Third Level Item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Third Level Item</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="blank.html">Blank Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">Login Page</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </div><!--/.sidebar-nav -->  
+
+
+
+            <!-- Page Content -->
+            <main id="page-wrapper6">
+                <div class="container-fluid">  
+                    <div class="col-md-6">
+                        <h3>Scale the page to see the collapsed sidebar on small screens</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus venenatis ante ac vestibulum. Curabitur congue, leo non elementum interdum, sapien erat iaculis felis, ut vulputate turpis mauris molestie lorem. Integer urna libero, pharetra sit amet massa in, blandit tempor eros. Nulla risus arcu, lacinia vel felis quis, varius gravida erat. Duis molestie, dolor et porttitor iaculis, mi dui aliquet justo, at mattis nisi leo vel nunc. In dapibus est aliquet, auctor nisl a, interdum felis. Donec sed ligula in ligula hendrerit congue non tristique risus. Morbi sollicitudin ligula non erat placerat, non vulputate nibh rutrum. Phasellus consectetur nibh sit amet ipsum sagittis, et lobortis ligula sollicitudin. Nunc ac diam non diam lacinia bibendum lacinia in magna. Morbi non ante eget ante aliquam porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Vestibulum faucibus turpis sit amet mauris accumsan volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent condimentum arcu ut erat commodo, eu porta mauris hendrerit.</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>It is important to keep all the text on the main page within the page-wrapper</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus venenatis ante ac vestibulum. Curabitur congue, leo non elementum interdum, sapien erat iaculis felis, ut vulputate turpis mauris molestie lorem. Integer urna libero, pharetra sit amet massa in, blandit tempor eros. Nulla risus arcu, lacinia vel felis quis, varius gravida erat. Duis molestie, dolor et porttitor iaculis, mi dui aliquet justo, at mattis nisi leo vel nunc. In dapibus est aliquet, auctor nisl a, interdum felis. Donec sed ligula in ligula hendrerit congue non tristique risus. Morbi sollicitudin ligula non erat placerat, non vulputate nibh rutrum. Phasellus consectetur nibh sit amet ipsum sagittis, et lobortis ligula sollicitudin. Nunc ac diam non diam lacinia bibendum lacinia in magna. Morbi non ante eget ante aliquam porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Vestibulum faucibus turpis sit amet mauris accumsan volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent condimentum arcu ut erat commodo, eu porta mauris hendrerit.</p>
+                    </div>
+                </div> 
+            </main>
+        </div><!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+        <script src="js/jquery.slimscroll.min.js"></script>
+        
+        <!-- JavaScript jQuery code from Bootply.com editor  -->
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                $('#side-menu').metisMenu({toggle: false});
+//                $('.slidebar-nav').slimscroll();
+                // add to footer
+                $("#menu-toggle").click(function (e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+
+            });
+
+        </script>
+    </body>
+</html>
