@@ -1,6 +1,6 @@
-# Java Bootstrap Admin Template
+# Shipment Tracking System
 
-Java Bootstrap Admin Template uses the following technologies and frameworks:
+Shipment Tracking System Admin Website uses the following technologies and frameworks:
 
 1- Netbeans
 
